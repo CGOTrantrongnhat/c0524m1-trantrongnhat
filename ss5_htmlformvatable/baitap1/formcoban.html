@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>taoformcoban</title>
+</head>
+<style>
+    body {
+
+         background-image: url("https://wallpaperaccess.com/full/949698.jpg");
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+
+    }
+     p{
+
+        text-align: center;
+        color: yellowgreen;
+         font-weight: bold;
+         text-shadow: 1px 1px black;
+
+    }
+     p1{
+         text-align: center;
+     }
+     h1{
+         text-align: center;
+         color: deeppink;
+         font-weight: bolder;
+         width: 110px;
+         height: 155px;
+         background-color: pink;
+     }
+     div{
+         background-image: url("https://th.bing.com/th/id/R.97efcba50ea624c68b5e4ca7e768f054?rik=n7%2bC1zwlQuU23A&pid=ImgRaw&r=0") ;
+         width: 420px;
+
+         color: white;
+     }
+</style>
+<body>
+<h1>sở <br> thích <br> của <br> bạn</h1>
+<div>
+ <form name="dangnhap" action="http://localhost:8080" method="post">
+    <p> họ  và tên: <input type="text" name="hovaten"><br>
+        your email: <input type="email" name="email">
+    <br>
+    sở thích:<br>
+    Thể Thao: <input type="checkbox"id="sothich" name="sothich">
+    âm nhạc: <input type="checkbox" id="sothich" name="sothich">
+    đá bóng: <input type="checkbox" id="sothich" name="sothich">
+    trươt ván: <input type="checkbox"id="sothich" name="sothich">
+    nấu ăn: <input type="checkbox"id="sothich" name="sothich">
+    chơi game: <input type="checkbox" id="sothich" name="sothich">
+    du lịch: <input type="checkbox" id="sothich" name="sothich"><br>
+    <input type="submit" value="gửi thông tin" name="sudmit">
+     <input type="reset" value="nhập lại" name="nhaplai"></p>
+ </div>
+
+
+</form>
+
+</body>
