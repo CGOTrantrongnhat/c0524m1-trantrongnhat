@@ -1,0 +1,7 @@
+Begin
+ input math
+ input physics
+ input chemistry
+ averrage = (math + physics + chemisty) /3
+ display averrage
+END

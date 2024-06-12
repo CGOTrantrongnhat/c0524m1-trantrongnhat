@@ -1,0 +1,7 @@
+Begin
+ input N
+ max = a1
+ for a(i) > max
+   max = a(i)
+ display max
+end

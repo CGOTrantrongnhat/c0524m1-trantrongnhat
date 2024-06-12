@@ -1,0 +1,13 @@
+begin
+ input diemso
+ if diemso =>75
+  print "loai A"
+ if diemso <=60 and<75
+  print "loai B"
+ if diemso <= 45 and <60
+  print "loai C"
+ if diemso <=35 <45
+  print "loai D"
+ if diemso <35
+  print "loai E"
+end
