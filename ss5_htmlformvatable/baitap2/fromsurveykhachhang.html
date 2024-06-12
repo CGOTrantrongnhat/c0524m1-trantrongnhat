@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Market Research Survey</title>
+</head>
+<body>
+<style>
+    body{
+        min-height: 150vh;
+
+        text-align: center;
+        background-image: url("https://wallpapercave.com/wp/wp7097039.jpg");
+        background-size: 3000px;
+    }
+    h1,h6{
+        text-align: center;
+    }
+    p{
+        border-collapse: collapse;
+        font-family: arial, sans-serif;
+        color: deeppink;
+        text-shadow: 1px 1px black;
+        font-weight: bold;
+        
+    }
+    table{
+
+        align-items: center;
+        background-position: center;
+        font-weight: bold;
+        color: deeppink;
+
+        text-shadow: 1px 1px black;
+    }
+          table {
+              background-color: pink;
+  font-family: arial, sans-serif;
+              text-align: center;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+<h1>Market Research Survey</h1>
+<h6>Please take a few moments to complete this satisfaction survey.</h6>
+
+<form name="selection">
+    <p>What is your age range?<br>
+    <select name="chon">
+        <option value="18-24">18-24</option>
+        <option value="25-34">25-34</option>
+        <option value="35-50">35-50</option>
+        <option value="50+">50+</option>
+    </select>
+    </p>
+    <p>What is your yearly income range?<br>
+     <select name="chon2">
+         <option value="$$$">$0-25,000</option>
+         <option value="$$$">$25,001-50,000</option>
+         <option value="$$$">$50,001-75,000</option>
+         <option value="$$$">$100,000</option>
+     </select>
+    </p>
+    <p>Gender Identity <br>
+        <input type="radio" name="gioitinh" value="Male"> Male<br>
+        <input type="radio" name="gioitinh" value="female"> Female<br>
+        <input type="radio" name="gioitinh" value="Nonbinary"> Nonbinary<br>
+        <input type="radio" name="gioitinh" value="other"> Other<br>
+        <input type="text" name="other"><br>
+
+    </p>
+    <p>Which of the following products have your purchased in the last 2 months. Please check all that apply. <br>
+        <input type="checkbox"> Product 1 <br>
+        <input type="checkbox"> Product 2<br>
+        <input type="checkbox"> Product 3<br>
+
+
+    </p>
+    <p>How often would you use our new product? <br>
+        <input type="radio" name="ngaynghi">Daily<br>
+        <input type="radio" name="ngaynghi">Weekly<br>
+        <input type="radio" name="ngaynghi">Monthly<br>
+
+    </p>
+    <p>What would you pay for the new product?<br>
+        $ Dolar <input type="number" name="money">
+       Cent <input type="text" name="cent" maxlength="2" value size="2" tabindex="0">
+
+
+    </p>
+    <p>What features would you like to see in the new product.<br>
+        <textarea style="width: 872px; height: 178px;" placeholder="Nói Điều Bạn Muốn"></textarea>
+
+    </p>
+
+    <table>
+        <caption>Please rate your level of agreement with the following statements.
+        </caption>
+        <tr>
+            <th>&nbsp;</th>
+            <td>Strongly Disagree</td>
+            <td>Disagree</td>
+            <td>Agree</td>
+            <td>Strongly Agree</td>
+            <tbody>
+        <tr >
+            <th>
+                <label>
+                    Our products are priced fairly.
+                </label>
+            </th>
+            <td title="Strongly Disagree">
+                <input  type="radio" role="radio"">
+                <label>1</label>
+            </td>
+            <td title="Disagree">
+                <input type="radio"">
+                <label >2</label>
+            </td>
+            <td title="Agree">
+                <input type="radio" >
+                <label >3</label>
+            </td>
+            <td title="Strongly Agree">
+                <input type="radio" role="radio">
+                <label >4</label>
+            </td>
+        </tr>
+        <tr >
+            <th>
+                <label >
+                    Our products are high quality.
+                </label>
+            </th>
+            <td title="Strongly Disagree">
+                <input type="radio">
+                <label =>1</label>
+            </td>
+            <td title="Disagree">
+                <input type="radio" >
+                <label >2</label>
+            </td>
+            <td title="Agree">
+                <input type="radio" >
+                <label >3</label>
+            </td>
+            <td title="Strongly Agree">
+                <input type="radio" >
+                <label >4</label>
+            </td>
+        </tr>
+        <tr >
+            <th>
+                <label >
+                    You would recommend our product to a friend or coworker.
+                </label>
+            </th>
+            <td title="Strongly Disagree">
+                <input type="radio" >
+                <label>1</label>
+            </td>
+            <td title="Disagree">
+                <input type="radio">
+                <label>2</label>
+            </td>
+            <td title="Agree">
+                <input type="radio">
+                <label">3</label>
+            </td>
+            <td title="Strongly Agree">
+                <input type="radio">
+                <label>4</label>
+            </td>
+        </tr>
+        </tbody>
+        </tr>
+    </table>
+
+</form><br>
+<form name="selection">
+    <input type="submit" id="333" value="Gửi Thông Tin">
+    </form>
+
+</body>
+</html>
