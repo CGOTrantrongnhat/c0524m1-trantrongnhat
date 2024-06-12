@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo Trang CV Cá Nhân</title>
+</head>
+<body>
+<h2>Họ và tên</h2>
+<p>Trần Trọng Nhật</p>
+<h2>Địa Chỉ</h2>
+<p>87 thánh gióng thuận lộc tp hue</p>
+<h2>Số Điện Thoại</h2>
+<p>0818384403</p>
+<h2>Email</h2>
+<p><a href="trantrongnhat201508511@gmail.com">trantrongnhat201508511@gmail.com</a></p>
+<h2>Ảnh</h2>
+<img src="https://khoinguonsangtao.vn/wp-content/uploads/2022/08/anh-meme-meo-cute-cuc-cung.jpg" alt="Ảnh của tôi">
+<h2>Học Vấn</h2>
+<p name="1"> Học vấn 12/12</p>
+<h2>Kỹ Năng</h2>
+<ul>
+    <li>Kỹ năng quản lý thơì gian</li>
+    <li>Kỹ năng làm việc nhóm </li>
+    <li>Kỹ năng giao tiếp tiếng anh,nhật,thành thạo</li>
+    <li>kỹ năng làm bếp nóng</li>
+
+</ul>
+<h2>Kinh Nghiệm</h2>
+<p>Kinh nghiệm 1 năm làm phó bếp cho khách sạn moonligh</p>
+<h2>Định Hướng Phát Triển Cá Nhân</h2>
+<p name="2">Định hướng 5 năm sau mua được du thuyền và hoa hậu mặc bikini</p>
+</body>
+</html>
