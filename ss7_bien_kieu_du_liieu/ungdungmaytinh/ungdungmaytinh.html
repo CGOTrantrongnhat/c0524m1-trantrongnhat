@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="window1">
+<input id="window2"><br>
+<button onclick="cong()">+</button>
+<button onclick="tru()">-</button>
+<button onclick="nhan()">x</button>
+<button onclick="chia()">/</button>
+<h3 id="result">Kết quả: </h3>
+<script>
+
+    let input1 = document.getElementById("window1");
+    let input2 = document.getElementById("window2");
+    function cong() {
+        let window1 = +input1.value;
+        let window2 = +input2.value;
+        let result = window1+window2;
+        document.getElementById("result").innerText = result;
+    }
+    function tru(){
+        let window1 = +input1.value;
+        let window2 = +input2.value;
+        let result = window1-window2;
+        document.getElementById("result").innerText = result;
+    }
+
+    function nhan(){
+        let window1 = +input1.value;
+        let window2 = +input2.value;
+        let result = window1*window2;
+        document.getElementById("result").innerText = result;
+
+    }
+    function chia(){
+        let window1 = +input1.value;
+        let window2 = +input2.value;
+        let result = window1/window2;
+        document.getElementById("result").innerText = result;
+    }
+
+</script>
+</body>
+</html>
