@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>maytinh</title>
+</head>
+<body>
+<table>
+  <tr>
+    <td colspan="50">
+      <input type="text" id="window">
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <button style="width: 2em" onclick="nhap(1)">1</button>
+    </td>
+    <td>
+      <button style="width: 2em" onclick="nhap(2)">2</button>
+    </td>
+    <td>
+      <button style="width: 2em" onclick="nhap(3)">3</button>
+    </td>
+    <td>
+      <button style="width: 2em" onclick="nhap('+')">+</button>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <button style="width: 2em" onclick="nhap(4)">4</button>
+    </td>
+    <td>
+      <button style="width: 2em" onclick="nhap(5)">5</button>
+    </td>
+    <td>
+      <button style="width: 2em" onclick="nhap(6)">6</button>
+    </td>
+    <td>
+      <button style="width: 2em" onclick="nhap('-')">-</button>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <button style="width: 2em" onclick="nhap(7)">7</button>
+    </td>
+    <td>
+      <button style="width: 2em" onclick="nhap(8)">8</button>
+    </td>
+    <td>
+      <button style="width: 2em" onclick="nhap(9)">9</button>
+    </td>
+    <td>
+      <button style="width: 2em" onclick="nhap('*')">X</button>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <button style="width: 2em" onclick="clearinput()">C</button>
+    </td>
+    <td>
+      <button style="width: 2em" onclick="nhap(0)">0</button>
+    </td>
+    <td>
+      <button style="width: 2em" onclick="bang()">=</button>
+    </td>
+    <td>
+      <button style="width: 2em" onclick="nhap('/')">/</button>
+    </td>
+  </tr>
+</table>
+<script>
+ let input = document.getElementById("window");
+ function nhap(nhapso) {
+   input.value += nhapso;
+ }
+ function bang(){
+   let string = input.value;
+   let result = eval(string);
+   input.value = result;
+ }
+ function clearinput(){
+   input.value="";
+ }
+</script>
+
+
+</body>
+</html>

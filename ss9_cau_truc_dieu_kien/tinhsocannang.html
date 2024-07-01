@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinhsocannang</title>
+</head>
+<body>
+<script>
+    for (let i =0; i <1;i++){
+
+
+    let inputbmi = +(prompt("nhap can nang"));
+    if (inputbmi<18)
+        document.write("underweight")
+    else if (inputbmi<25.0)
+        document.write("normal")
+    else if (isNaN(inputbmi)){
+        alert("invalid number try again");
+        break;
+    }
+    else
+        document.write("obese");
+    }
+</script>
+
+</body>
+</html>

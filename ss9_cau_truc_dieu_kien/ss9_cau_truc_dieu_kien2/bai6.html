@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải phương trình bậc 2</title>
+</head>
+<body>
+<script>
+    let so1 = +prompt("Nhập vào giá trị a");
+    let so2 = +prompt("Nhập vào giá trị b");
+    let so3 = +prompt("Nhập vào giá trị c");
+    let exponent = 2;
+    let delta = (so2 ** exponent) - (4 * so1 * so3);
+    let square = Math.sqrt(delta);
+
+    if (delta < 0) {
+        alert("Phương trình vô nghiệm");
+    } else if (delta === 0) {
+        let x = -so2 / (2 * so1);
+        alert("Phương trình có nghiệm kép là x1 = x2 = " + x);
+    } else {
+        let x1 = (-so2 + square) / (2 * so1);
+        let x2 = (-so2 - square) / (2 * so1);
+        alert("Phương trình có hai nghiệm là x1 = " + x1 + " và x2 = " + x2);
+    }
+</script>
+
+</body>
+</html>

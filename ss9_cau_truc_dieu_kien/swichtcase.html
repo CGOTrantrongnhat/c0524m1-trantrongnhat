@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Switch-Case</title>
+
+</head>
+<body>
+
+<form>
+    <label for="text1"></label>
+    <input type="text" id="text1">
+    <button type="button" onclick="check()">Tính số ngày</button>
+</form>
+<div id="result"></div>
+<script>
+    function check() {
+        let a = parseFloat(document.getElementById("text1").value);
+        let result = "";
+        switch (a) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                result = ("This month has 31 days");
+                break;
+
+            case 2:
+                result = ("This month has 28 or 29 days");
+                break;
+
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                result = ("This month has 30 days");
+                break;
+            default:
+                result = "Invalid month";
+        }
+        document.getElementById("result").innerHTML = result;
+    }
+
+</script>
+</body>
+</html>

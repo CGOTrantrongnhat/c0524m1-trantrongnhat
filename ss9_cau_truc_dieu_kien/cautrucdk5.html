@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp hạng học lực</title>
+</head>
+<body>
+<script>
+    let dkt = +prompt("Nhập vào điểm kiểm tra");
+    let dtgk = +prompt("Nhập vào điểm thi giữa kỳ");
+    let dtck = +prompt("Nhập vào điểm thi cuối kỳ");
+    let hocluc = (dkt + dtgk * 2 + dtck * 3) / 6;
+    if (hocluc > 8.0) {
+        alert("Học sinh GIỎI");
+    } else if (hocluc > 6.0) {
+        alert("Học sinh KHÁ");
+    } else if (hocluc > 5.0) {
+        alert("Học sinh TRUNG BÌNH");
+    } else {
+        alert("Học sinh YẾU");
+    }
+</script>
+
+</body>
+</html>
