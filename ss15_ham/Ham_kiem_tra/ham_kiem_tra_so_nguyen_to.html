@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Tâp Hàm kiểm tra số nguyên tố</title>
+</head>
+<body>
+<script>
+    // Định nghĩa hàm kiểm tra số nguyên tố
+    function isPrime(number) {
+        if (number <= 1) return false; // Số nhỏ hơn hoặc bằng 1 không phải là số nguyên tố
+        for (let i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i === 0) return false; // Nếu chia hết cho i thì không phải số nguyên tố
+        }
+        return true; // Nếu không chia hết cho số nào thì là số nguyên tố
+    }
+
+    // Tìm tất cả các số nguyên tố nhỏ hơn 10000
+    let primeNumbers = [];
+    for (let i = 2; i < 10000; i++) {
+        if (isPrime(i)) {
+            primeNumbers.push(i);
+        }
+    }
+
+    // In ra các số nguyên tố
+    document.write(primeNumbers + " ");
+
+</script>
+</body>

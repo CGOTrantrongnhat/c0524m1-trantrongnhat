@@ -1,0 +1,120 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>Student Management</title>
+
+</head>
+<style>
+    body {
+        font-family: 'Pacifico', cursive;
+        background-image: linear-gradient(to bottom, #3498db, #2ecc71);
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    }
+
+    th, td {
+        border: 1px solid #8e44ad;
+        padding: 10px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    th {
+        background-color: #2ecc71;
+        color: #fff;
+    }
+
+    td {
+        background-color: #f9f9f9;
+    }
+
+
+    #id1 th {
+        font-size: 24px;
+    }
+
+    .list-student tr:nth-child(even) {
+        background-color: #c6e2b5;
+    }
+
+    .list-student tr:hover {
+        background-color: #2ecc71;
+    }
+
+    button[type="button"] {
+        cursor: pointer;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: brown;
+        color: #fff;
+    }
+
+    button[type="button"]:hover {
+        background-color: #3498db;
+    }
+</style>
+<body><img src="hvhcqg.png" id="logo">
+<h1> QUẢN LÝ HỌC VIÊN </h1>
+<table style=" border: 1px solid black; width: 700px; float: right">
+    <tbody><tr>
+        <th style="font-size: 40px" colspan="7">Danh sách học viên</th>
+    </tr>
+    <tr>
+        <th>ID</th>
+        <th>Họ tên</th>
+        <th>Ngày sinh</th>
+        <th>Giới tính</th>
+        <th>Lớp</th>
+        <th>Ảnh</th>
+        <th>Tùy chọn</th>
+
+    </tr>
+    </tbody><tbody id="list-student">
+</table>
+
+<table border="1" style="width: 500px; height: 300px" ;="">
+    <tbody><tr id="id1">
+        <th colspan="2"> Thông tin học viên</th>
+    </tr>
+
+    <tr>
+        <th>ID</th>
+        <td><input type="number" id="id"></td>
+
+    </tr>
+    <tr>
+        <th>Họ tên</th>
+        <td><input type="text" id="fullname"></td>
+    </tr>
+    <tr>
+        <th>Ngày sinh</th>
+        <td><input type="text" id="date"></td>
+    </tr>
+    <tr>
+        <th>Giới tính</th>
+        <td><input type="text" id="gender"></td>
+    </tr>
+    <tr>
+        <th>Lớp</th>
+        <td><input type="text" id="grade"></td>
+    </tr>
+    <tr>
+        <th>Ảnh</th>
+        <td><input type="hidden" id="img"></td>
+    </tr>
+    <tr>
+        <th></th>
+        <td>
+            <button style="background-color: limegreen" id="add" onclick="addStudent()">Add</button>
+            <button style="background-color: gold" id="edit" onclick="updateStudent()">Save</button>
+        </td>
+    </tr>
+    </tbody></table>
+<script src="student.js"></script>
+<script src="main.js"></script>
+
+</body></html>

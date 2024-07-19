@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng cửu chương s</title>
+    <style>
+        table, td, th {
+            border: 1px solid;
+
+        }
+        body {
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+<p id="table"></p>
+<script>
+    let tableString = '<table style="border-collapse: collapse">';
+    for (let i = 1; i <=10 ; i++) {
+        tableString +='<tr>'
+        for (let j = 2; j <=9 ; j++) {
+            tableString +='<td>'+j+'x'+i+'='+(i*j)+'</td>'
+        }
+        tableString +='</tr>'
+    }
+    tableString +='</table>';
+    document.getElementById("table").innerHTML= tableString;
+</script>
+</body>
+</html>
