@@ -1,0 +1,114 @@
+
+body {
+    font-family: "Arial Black";
+    background-image: url("aliens-triangle-pyramid-4k-ur-1920x1080.jpg");
+    background-repeat: no-repeat;
+
+
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+th {
+    background-color: #ff3333;
+    color: #ffffff;
+}
+
+td {
+    background-color: rgba(255, 255, 255, 0);
+    color: #ffffff;
+}
+
+
+#id1 th {
+    font-size: 24px;
+}
+
+.list-student tr:nth-child(even) {
+    background-color: #c6e2b5;
+}
+
+.list-student tr:hover {
+    background-color: #2ecc71;
+}
+
+button[type="button"] {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #fff;
+}
+
+button[type="button"]:hover {
+    background-color: #000000;
+}
+
+#date {
+    background-image: linear-gradient( #dfb660, rgb(204, 154, 46));
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#date::-webkit-inner-spin-button {
+    background-color: #F7DC6F;
+    border: none;
+    border-radius: 50%;
+}
+
+#date::-webkit-calendar-picker-indicator {
+    background-image: url('date.png');
+    background-size: contain;
+    background-position: center;
+}
+#gender-select{
+    width: 58%;
+}
+h1{
+text-align: center;
+
+    color: white;
+    font-family: Arial;
+    text-shadow: 1px 3px black;
+}
+#table1 {
+    float: left;
+    margin-left: 100px;
+ }
+#table2{
+    float: right;
+    margin-right: 100px;
+}
+input {
+    background-image: url("5o4zidv9.png");
+
+    border-radius: 5px;
+    padding: 5px;
+    width: 200px;
+}
+#gender-select{
+    background-image: url("5o4zidv9.png");
+    padding: 5px;
+    border-radius: 5px;
+    width: 200px;
+}
+#logo{
+    border-radius: 50%;
+    margin-left: 880px;
+}

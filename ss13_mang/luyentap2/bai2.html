@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let length = +prompt("Size Array");
+    let arr = [];
+    for (let i = 0; i < length; i++) {
+        arr[i] = prompt(`Enter the element ${i+1}`);
+    }
+    document.write("Fist Array: " + arr + "<br>");
+    document.write("Inverted Array: " + arr.reverse());
+</script>
+</body>
+</html>
