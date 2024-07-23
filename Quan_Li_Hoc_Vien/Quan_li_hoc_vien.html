@@ -5,7 +5,8 @@
 
 </head>
 
-<body><img src="logo.jpg" id="logo" height="100" width="100">
+<body>
+<img src="logo.jpg" id="logo" height="100" width="100">
 <h1> QUẢN LÝ HỌC VIÊN </h1>
 <table id="table2" style=" border: 1px solid black; width: 500px">
     <tbody>
@@ -21,6 +22,7 @@
         <th>Lớp</th>
         <th>Ảnh</th>
         <th>Tùy chọn</th>
+
 
     </tr>
     </tbody><tbody id="list-student">
@@ -59,13 +61,13 @@
     </tr>
     <tr>
         <th>Ảnh</th>
-        <td><input type="" id="img"></td>
+        <td><label for="InputImg">Upload Image</label><input type="file" id="InputImg"></td>
     </tr>
     <tr>
         <th></th>
         <td>
             <button id="add" onclick="addStudent()">Add</button>
-            <button id="edit" onclick="savebutton()">Save</button>
+            <button id="save" onclick="savebutton()">Save</button>
         </td>
     </tr>
     </tbody></table>

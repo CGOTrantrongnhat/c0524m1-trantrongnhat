@@ -77,11 +77,13 @@ button[type="button"]:hover {
     background-size: contain;
     background-position: center;
 }
+}
 #gender-select{
     width: 58%;
 }
 h1{
 text-align: center;
+    background-color: rgb(204, 154, 46);
 
     color: white;
     font-family: Arial;
@@ -93,7 +95,7 @@ text-align: center;
  }
 #table2{
     float: right;
-    margin-right: 100px;
+    margin-right: 50px;
 }
 input {
     background-image: url("5o4zidv9.png");
@@ -111,4 +113,37 @@ input {
 #logo{
     border-radius: 50%;
     margin-left: 880px;
+}
+#InputImg{
+    display: none;
+}
+label{
+    margin-left: 9px;
+    text-align: center;
+    width: 100px;
+
+    color: white;
+    border-radius: 5px;
+    background-image: linear-gradient( #dfb660, rgb(204, 154, 46));
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#add{
+    text-shadow: black 2px 3px;
+
+    background-color: green;
+    color: white;
+    width: 30%;
+    height: 30px;
+    border-radius: 5px;
+}
+#save{
+    text-shadow: black 2px 3px;
+    background-color: #cc9a2e;
+    color: white;
+    width: 30%;
+    height: 30px;
+    border-radius: 5px;
 }
