@@ -1,7 +1,7 @@
 
 body {
     font-family: "Arial Black";
-    background-image: url("aliens-triangle-pyramid-4k-ur-1920x1080.jpg");
+    background-color: rgb(156, 156, 156);
     background-repeat: no-repeat;
 
 
@@ -23,8 +23,8 @@ th, td {
 }
 
 th {
-    background-color: #ff3333;
-    color: #ffffff;
+    background-color: rgb(67, 67, 67);
+    color: rgb(255, 255, 255);
 }
 
 td {
@@ -83,7 +83,7 @@ button[type="button"]:hover {
 }
 h1{
 text-align: center;
-    background-color: rgb(204, 154, 46);
+    background-color: rgb(67, 67, 67);
 
     color: white;
     font-family: Arial;
@@ -124,7 +124,7 @@ label{
 
     color: white;
     border-radius: 5px;
-    background-image: linear-gradient( #dfb660, rgb(204, 154, 46));
+    background-image: linear-gradient( #707070, rgb(193, 171, 122));
     padding: 10px;
     border: none;
     border-radius: 5px;
