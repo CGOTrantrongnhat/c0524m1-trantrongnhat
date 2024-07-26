@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function inputArray() { //cho người dùng nhập vào màng (n) number
+        let n = +(prompt("Enter the number of elements in the array (n <= 20): "));
+        let arr = [];//Nó tạo ra một mảng trống
+        for (let i = 0; i < n; i++) {//sử dụng vòng lặp nhắc người dùng nhập từng phần tử của mảng
+            let num = +(prompt(`Enter element ${i + 1}: `));
+            arr.push(num);// thêm nó vào mảng bằng cách sử dụng .arrpush()
+        }
+        displayArray(arr);
+    }
+
+    function displayArray(arr) {//hàm này hiển thị và điều kiện
+        console.log("Array: " + arr.join(", "));
+        //khởi tạo hai biến: tổng chẵn và tổng lẻ thành soChan - soLe
+
+        let soChan = 0;
+        let soLe = 0;
+        for (let i = 0; i < arr.length; i++) {//lặp qua từng phần tử của mảng
+            //kiểm tra xem phần tử có chẵn không
+            // nếu có thêm nó vào soChan
+            // Nếu không thêm nó vào soLe
+            if (arr[i] % 2 === 0) {
+                soChan += arr[i];
+            } else {
+                soLe += arr[i];
+            }
+        }
+        document.write(`Tổng số chẵn là: ${soChan}`);
+        document.write(`Tổng số lẻ là : ${soLe}`);
+    }
+
+    inputArray();
+</script>
+</html>

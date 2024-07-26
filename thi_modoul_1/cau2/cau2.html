@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cau2</title>
+</head>
+<body>
+<table>
+
+</table>
+</body>
+<script>
+    function count() {
+        let str = prompt("Enter a string: "); //cho người dùng nhập vào
+        let Count = 0;
+        for (let char of str) {
+            if (char >= 'A' && char <= 'Z') { // kiểm tra kí tự
+                Count++;
+            }
+        }
+        if (Count === 0) {//điều kiện nếu không có ký tự in hoa
+            alert("The string is not contain upperchar");
+        } else {
+            alert(Count);
+        }
+    }
+
+    count();
+</script>
+</html>

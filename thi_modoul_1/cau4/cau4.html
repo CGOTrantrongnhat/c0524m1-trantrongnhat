@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <h1>Phone Management</h1>
+    <form id="add-phone-form">
+        <input type="text" id="maDienThoai" placeholder="Mã điện thoại">
+        <input type="text" id="ten" placeholder="Tên">
+        <input type="text" id="hangSanXuat" placeholder="Hãng sản xuất">
+        <input type="number" id="gia" placeholder="Giá">
+        <button id="add-phone-btn">Thêm mới</button>
+    </form>
+    <ul id="phone-list"></ul>
+</div>
+
+
+</body>
+<script>
+    // Khởi tạo mảng phones rỗng
+    let phones = [];
+    // Khởi tạo class Phone
+    class Phone {
+        constructor(maDienThoai, ten, hangSanXuat, gia) {
+            this.maDienThoai = maDienThoai;
+            this.ten = ten;
+            this.hangSanXuat = hangSanXuat;
+            this.gia = gia;
+        }
+    }
+
+    // Thêm sự kiện submit cho form để thêm mới điện thoại
+    document.getElementById("add-phone-form").addEventListener("submit", (e) => {
+        // Ngăn chặn sự kiện submit mặc định của form
+        e.preventDefault();
+        // Lấy giá trị từ các input
+        let maDienThoai = document.getElementById("maDienThoai").value;
+        let ten = document.getElementById("ten").value;
+        let hangSanXuat = document.getElementById("hangSanXuat").value;
+        let gia = parseInt(document.getElementById("gia").value);
+
+            // Tạo mới một đối tượng Phone
+            let newPhone = new Phone(maDienThoai, ten, hangSanXuat, gia);
+            // Thêm mới đối tượng newPhone vào mảng phones
+            phones.push(newPhone);
+            // Gọi hàm renderPhoneList để hiển thị danh sách điện thoại mới
+            renderPhoneList();
+
+    });
+
+    // Hàm renderPhoneList để hiển thị danh sách điện thoại
+    function renderPhoneList() {
+        // Lấy element chứa danh sách điện thoại
+        let phoneListElement = document.getElementById("phone-list");
+        // Xóa nội dung cũ của element
+        phoneListElement.innerHTML = "";
+
+        // Duyệt qua mảng phones và tạo mới các element li để hiển thị danh sách điện thoại
+        phones.forEach((phone) => {
+            let liElement = document.createElement("li");
+
+            liElement.textContent = `${phone.maDienThoai} - ${phone.ten} - ${phone.hangSanXuat} - ${phone.gia}`;
+
+            // Thêm element li vào element chứa danh sách điện thoại
+            phoneListElement.appendChild(liElement);
+        });
+    }
+
+    renderPhoneList();
+</script>
+
+</html>

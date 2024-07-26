@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cau3</title>
+</head>
+<body>
+
+</body>
+<script>
+    // Hàm kiểm tra số nguyên tố
+    function isPrime(num) {
+        if (num < 2) {
+            return false; // Không phải số nguyên tố
+        }
+        for (let i = 2; i * i <= num; ++i) {
+            if (num % i === 0) {
+                return false; // Không phải số nguyên tố
+            }
+        }
+        return true; // Là số nguyên tố
+    }
+
+    // Hàm tìm số nguyên tố trong mảng và hiển thị kết quả
+    function findAndDisplayPrimes(arr) {
+        const primes = arr.filter((num) => isPrime(num));
+        primes.sort((a, b) => a - b); // Sắp xếp tăng dần
+        console.log("Các số nguyên tố trong mảng:");
+        console.log(primes);
+    }
+
+    const myArray = [7, 2, 13, 5, 19, 3, 11,26,35,62,6,94,91,65,1545];
+    findAndDisplayPrimes(myArray);
+</script>
+</html>
